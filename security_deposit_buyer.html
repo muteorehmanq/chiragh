@@ -128,6 +128,41 @@
                   Choose a payment method
                   <div class="deposit-sub-heading">All transactions are secure and encrypted.</div>
                 </div>
+                <div class="payment-method-wrap">
+                  <ul class="nav nav-tabs payment-tabs" id="paymentTab" role="tablist">
+                    <li class="nav-item mr-3">
+                      <div class="nav-link active" id="pay-credit-tab" data-toggle="tab" href="#payCredit" role="tab" aria-controls="pay-credit" aria-selected="true">
+                        Pay By Credit Card
+                        <div class="payment-cards-div my-2">
+                          <a class="visa-card"></a>
+                          <a class="paypal-card"></a>
+                          <a class="amex-card"></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item mr-3">
+                      <div class="nav-link" id="pay-debit-tab" data-toggle="tab" href="#payDebit" role="tab" aria-controls="pay-debit" aria-selected="false">
+                        Pay By Debit Card
+                        <div class="payment-cards-div my-2">
+                          <a class="visa-card"></a>
+                          <a class="paypal-card"></a>
+                          <a class="amex-card"></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <div class="nav-link" id="bank-transfer-tab" data-toggle="tab" href="#bankTransfer" role="tab" aria-controls="bank-transfer" aria-selected="false">
+                        Bank Transfer
+                        <div class="payment-cards-div my-2"><a class="bank-transfer-card"></a></div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="payCredit" role="tabpanel" aria-labelledby="home-tab"></div>
+                    <div class="tab-pane fade" id="payDebit" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    <div class="tab-pane fade" id="bankTransfer" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

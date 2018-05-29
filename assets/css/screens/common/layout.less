@@ -485,6 +485,42 @@
             font-weight: 400; 
           } 
         }
+        .payment-method-wrap {
+          .payment-tabs {
+            .nav-item {
+              flex: 1;
+              text-align: center;
+              .nav-link {
+                font-weight: bold;
+                border: 1px solid @seprator-color;
+                text-transform: uppercase;
+                &.active {
+                  background-color: @placeholder-color;
+                  border: 1px solid transparent; 
+                }
+                .payment-cards-div {
+                  .visa-card {
+                    background: url("../../assets/images/sprite-image.png") no-repeat -552px -286px;
+                    padding: 3px 18px;    
+                  }
+                  .paypal-card {
+                    .visa-card;
+                    background-position: -583px -286px;
+                  }
+                  .amex-card {
+                    .visa-card;
+                    background-position: -617px -286px;
+                  }
+                  .bank-transfer-card {
+                    .visa-card;
+                    padding: 6px 21px;
+                    background-position: -655px -286px;  
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     .fees-auction-row {
