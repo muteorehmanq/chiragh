@@ -500,12 +500,13 @@
                 }
                 .payment-cards-div {
                   .visa-card {
-                    background: url("../../assets/images/sprite-image.png") no-repeat -552px -286px;
+                    background: url("../../assets/images/sprite-image.png") no-repeat -554px -286px;
                     padding: 3px 18px;    
                   }
                   .paypal-card {
                     .visa-card;
-                    background-position: -583px -286px;
+                    padding: 3px 16px;
+                    background-position: -586px -286px;
                   }
                   .amex-card {
                     .visa-card;
@@ -516,6 +517,18 @@
                     padding: 6px 21px;
                     background-position: -655px -286px;  
                   }
+                }
+              }
+            }
+          }
+          .payment-wraper {
+            border: 1px solid @seprator-color;
+            .tab-pane {
+              .payment-form {
+                .payment-label {
+                  font-size: 13px;
+                  color: @mono-color;
+                  text-transform: uppercase;
                 }
               }
             }

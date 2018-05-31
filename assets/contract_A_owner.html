@@ -8,11 +8,10 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <link href="./assets/css/application.css" rel="stylesheet">
   <script src="./assets/js/jquery-3.2.1.slim.min.js"></script>
-  <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/fa-all.js"></script>
   <script src="./assets/js/jQuery-v3.3.1.min.js"></script>
-  <script src="./assets/js/common.js"></script>
 </head>
 <body>
   <div class="container-fluid screen-wrapper">
@@ -65,16 +64,13 @@
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">FAQs</a>
-                      </li> 
-                      <li class="nav-item mr-3">
+                      </li>
+                      <li class="nav-item">
                         <a class="nav-link" href="#">Resources</a>
                       </li>
-                      <li class="nav-item nav-dropdown dropdown pl-3">
-                        <a class="user-id-link" data-toggle="dropdown">
-                          <span class="user-id">Buyer ID</span><i class="far fa-bell"></i> 
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Logout</a>
+                      <li class="nav-item reg-sign-in-item">
+                        <div class="common-btn reg-sign-in-block px-3">
+                          <a class="register-link pr-2" href="#">Register</a><a class="sign-in pl-2" href="#">Sign in</a>
                         </div>
                       </li>
                     </ul>
@@ -89,134 +85,92 @@
     <div class="row body-section">
       <div class="col-md-12">
         <div class="row form-wrapper-row py-5">
-          <div class="offset-md-2 col-md-8">
+          <div class="offset-md-1 col-md-10">
             <div class="row sign-in-row">
-              <div class="offset-md-4 col-md-5 sign-in-col">
+              <div class="offset-md-2 col-md-8 sign-in-col">
                 <form class="common-form" novalidate>
-                  <div class="text-center mb-5 page-primary-title-34">Security Deposit</div>
-                  <div class="input-wrapper form-label-group mb-4">
-                    <input type="password" class="form-control form-input" placeholder="Enter Your Security Code" required>
-                    <label for="stuff" class="fa fa-lock input-icon"></label>
-                  </div>
-                  <div class="common-checkbox sign-in-remeber-div mb-4">                    
-                    <label class="font-size-14 align-items-center">
-                      <input type="checkbox"><span class="checkbox-material"><span class="check mr-2"></span></span>I agree with Terms & Conditions (Read more)
-                    </label>
-                  </div>
+                  <div class="mb-5 page-primary-title-34">Property Details</div>
                   <div class="row">
-                    <div class="col-md-6 mb-xs-4">
-                      <button class="btn common-btn-18">400</button>
+                    <div class="col-md-12 form-block-heading mb-2">Area Details:</div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <select class="form-control common-select">
+                        <option>Property Status</option>
+                        <option>Sell</option>
+                        <option>Buy</option>
+                      </select>
                     </div>
-                    <div class="col-md-6 dropdown">
-                      <button class="btn common-btn-18 dropdown-toggle" data-toggle="dropdown">AED</button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="text" class="form-control onlyText form-input" placeholder="Plot Number">
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="text" class="form-control onlyText form-input" placeholder="Type of Area" required>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="number" class="form-control onlyText form-input" placeholder="Title Deed Number" required>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="text" class="form-control onlyText form-input" placeholder="Address" required>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="text" class="form-control onlyText form-input" placeholder="Location Map" required>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="text" class="form-control onlyText form-input" placeholder="Property Number" required>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <select class="form-control common-select">
+                        <option>Type of Property</option>
+                        <option>Sell</option>
+                        <option>Buy</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="text" class="form-control onlyText form-input" placeholder="Project Name" required>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="text" class="form-control onlyText form-input" placeholder="Area" required>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="number" class="form-control onlyText form-input" placeholder="Owner Association Number" required>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <select class="form-control common-select">
+                        <option>Present Use</option>
+                        <option>Sell</option>
+                        <option>Buy</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="number" class="form-control onlyText form-input" placeholder="Community Number" required>
+                    </div>
+                    <div class="col-md-6 form-label-group mb-4">
+                      <input type="text" class="form-control onlyText form-input" placeholder="Property Approx. Age" required>
+                    </div>
+                  </div>
+                  
+                  <div class="row mt-3">
+                    <div class="col-md-12 document-upload">
+                      Upload Title Deed
+                      <div class="sub-details">jpg, png, pdf accepted with file size not exceeding 2Mb</div>
+                    </div>
+                    <div class="col-md-12 upload-doc-block">
+                      <div class="upload-btn-div mt-4">
+                        <div class="file">
+                          <input type="file" name="file" class="doc-upload" />
+                        </div>
+                        <div class="upload-instuct mt-2">Scanned Title Deed</div>
                       </div>
                     </div>
                   </div>
-                  <ul class="pl-3 mt-3 font-size-14">
-                    <li>2.5% Security deposit based on reserved price</li>
-                    <li>Refundable in case of unsuccessful bid contestant</li>
-                  </ul>
+                  <div class="row mt-5 submit-btn-row">
+                    <div class="offset-md-6 col-md-3 mb-xs-4">
+                      <button class="btn common-btn btn-light-black">Back</button>
+                    </div>
+                    <div class="col-md-3">
+                      <button class="btn common-btn" type="submit">Next</button>
+                    </div>
+                  </div>
                 </form>
-              </div>
-            </div>
-            <div class="row payment-row mt-5">
-              <div class="offset-md-1 col-md-11 payment-col">
-                <div class="deposit-heading mb-4">
-                  Choose a payment method
-                  <div class="deposit-sub-heading">All transactions are secure and encrypted.</div>
-                </div>
-                <div class="payment-method-wrap">
-                  <ul class="nav nav-tabs payment-tabs border-none" id="paymentTab" role="tablist">
-                    <li class="nav-item mr-3 mr-xs-0">
-                      <div class="nav-link active" id="pay-credit-tab" data-toggle="tab" href="#payCredit" role="tab" aria-controls="pay-credit" aria-selected="true">
-                        Pay By Credit Card
-                        <div class="payment-cards-div my-2">
-                          <a class="visa-card"></a>
-                          <a class="paypal-card"></a>
-                          <a class="amex-card"></a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item mr-3 mr-xs-0">
-                      <div class="nav-link" id="pay-debit-tab" data-toggle="tab" href="#payDebit" role="tab" aria-controls="pay-debit" aria-selected="false">
-                        Pay By Debit Card
-                        <div class="payment-cards-div my-2">
-                          <a class="visa-card"></a>
-                          <a class="paypal-card"></a>
-                          <a class="amex-card"></a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <div class="nav-link" id="bank-transfer-tab" data-toggle="tab" href="#bankTransfer" role="tab" aria-controls="bank-transfer" aria-selected="false">
-                        Bank Transfer
-                        <div class="payment-cards-div my-2"><a class="bank-transfer-card"></a></div>
-                      </div>
-                    </li>
-                  </ul>
-                  <div id="myTabContent" class="tab-content payment-wraper py-5 py-xs-3 px-xs-3">
-                    <div id="payCredit" class="row tab-pane fade show active">
-                      <div class="offset-md-2 col-md-8">
-                        <form class="common-form payment-form" novalidate>
-                          <div class="row">
-                            <div class="col-md-8 form-label-group mb-4">
-                              <label class="payment-label">Card Number</label>
-                              <input type="text" class="form-control onlyText form-input" placeholder="xxx - xxx - xxx - xxx" required>
-                            </div>
-                            <div class="col-md-4 form-label-group mb-4">
-                              <label class="payment-label">
-                                Cvc<i class="fas fa-question-circle ml-2"></i>
-                              </label>
-                              <input type="number" class="form-control form-input" placeholder="123" required>
-                            </div>
-                            <div class="col-md-12 form-label-group mb-4">
-                              <label class="payment-label">Card Holder Name</label>
-                              <input type="text" class="form-control onlyText form-input" placeholder="Name" required>
-                            </div>    
-                            <div class="col-md-12">
-                              <label class="payment-label">Expiration Date</label>    
-                            </div>
-                            <div class="col-md-6 form-label-group mb-4">
-                              <select class="form-control common-select" required>
-                                <option>Months</option>
-                                <option>Jan</option>
-                                <option>Feb</option>
-                                <option>Mar</option>
-                                <option>Apr</option>
-                                <option>May</option>
-                                <option>Jun</option>
-                                <option>Jul</option>
-                                <option>Aug</option>
-                                <option>Sep</option>
-                                <option>Oct</option>
-                                <option>Nov</option>
-                                <option>Dec</option>
-                              </select>
-                            </div>
-                            <div class="col-md-6 form-label-group mb-4" required>
-                              <select class="form-control common-select">
-                                <option>Year</option>
-                                <option>2014</option>
-                                <option>2015</option>
-                                <option>2016</option>
-                                <option>2017</option>
-                                <option>2018</option>
-                              </select>
-                            </div>
-                            <div class="col-md-12">
-                              <button class="btn common-btn-18" type="submit">MAKE A PAYMENT</button>
-                            </div>
-                          </div>
-                        </form>    
-                      </div>
-                    </div>
-                    <div id="payDebit" class="tab-pane fade">...</div>
-                    <div id="bankTransfer" class="tab-pane fade">...</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -328,4 +282,5 @@
     </footer> 
   </div>
 </body>
-</html>   
+</html>  
+<script type="text/javascript" src="./assets/js/common.js"></script>
